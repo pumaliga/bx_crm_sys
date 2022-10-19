@@ -1,5 +1,3 @@
-import os
-
 from app.auth import auth
 
 
@@ -14,3 +12,5 @@ def signup():
 @auth.route('/logout')
 def logout():
     return 'Logout'
+
+
