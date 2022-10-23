@@ -2,3 +2,108 @@ body{
     background-color: #FFFFFF;
 }
 
+.welcome-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/main_circles.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.title-container{
+    display: flex;
+}
+
+.welcome-div{
+    padding-left: 90px;
+}
+
+.wel-title{
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.wel-body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.bx-title{
+    width: 80%;
+}
+
+.main-image{
+    width: 670px;
+    height: 700px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-text{
+    width: 70%;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-title{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+}
+
+.main-photo{
+    height: 500px;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.p-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div-about{
+    margin: 0 100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.div-inside{
+    padding-left: 10px;
+    border-left: 3px solid #7E49D4;
+}
+
+.p-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.p-body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6C6C6C;
+
+}

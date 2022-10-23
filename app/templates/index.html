@@ -2,4 +2,74 @@
 
 {% block content %}
     {% include 'navbar.html' %}
+    <div class="welcome-container">
+        <div class="title-container">
+            <div class="welcome-div">
+                <p class="wel-title">Шкіряне взуття по системі дропшипінг</p>
+                <p class="wel-body">Заробляй разом з нами</p>
+                <div class="div-cooperate">
+                    <button class="cooperate-btn">Співпрацювати</button>
+                </div>
+            </div>
+            <div>
+                <img class="main-image" src="{{ url_for('static', filename='images/main_photo.png') }}">
+            </div>
+        </div>
+        <div class="about-container">
+            <img class="bx-title" src="{{ url_for('static', filename='images/Frame10.png') }}">
+            <div class="main-text">
+                Компанія BRAXTON™ — це український бренд заснований у 1992 році який зміг зарекомендувати себе як виробник високоякісного товару, що відрізняється оригінальним дизайном. Пропонує натуральне шкіряне взуття, яке виготовляється з високоякісних матеріалів. Гарний дизайн чоловічого взуття та просунуті рішення мають високі оцінки якості чоловічого взуття.
+            </div>
+        </div>
+    </div>
+    <p class="main-title">Що ви отримуєте працюючи з нами</p>
+    <div class="main-container">
+        <div>
+            <img class="main-photo" src="{{ url_for('static', filename='images/black-main.png') }}">
+        </div>
+        <div class="p-container">
+            <div class="div-about">
+                <div class="div-inside">
+                    <div class="p-title">
+                        Якість
+                    </div>
+                    <div class="p-body">
+                        За допомогою сучасного обладнання та висококваліфікованих фахівців виходить домогтися високої якості продукції
+                    </div>
+                </div>
+
+            </div>
+            <div class="div-about">
+                <div class="div-inside">
+                    <div class="p-title">
+                        Висока маржинальність
+                    </div>
+                    <div class="p-body">
+                        Ми надаємо найкращі ціни на товари завдяки тому, що самі виготовляємо продукцію, а дисконтна система знижок дозволить вам заробляти більше
+                    </div>
+                </div>
+            </div>
+            <div class="div-about">
+                <div class="div-inside">
+                    <div class="p-title">
+                        Контент, що продає
+                    </div>
+                    <div class="p-body">
+                        В онлайн-продажах контент це велика частина успіху, тому наша команда робить багато продаючого фото та відео контенту
+                    </div>
+                </div>
+            </div>
+            <div class="div-about">
+                <div class="div-inside">
+                    <div class="p-title">
+                        Зручність використання
+                    </div>
+                    <div class="p-body">
+                        Зручний особистий кабінет з вивантаженнями та CRM система для оформлення замовлень, їх контролю та підрахунку заробітку
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
