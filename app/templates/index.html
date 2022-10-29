@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% include 'navbar.html' %}
     <div class="welcome-container">
+        {% include 'navbar.html' %}
         <div class="title-container">
             <div class="welcome-div">
                 <p class="wel-title">Шкіряне взуття по системі дропшипінг</p>
@@ -11,21 +11,18 @@
                     <button class="cooperate-btn">Співпрацювати</button>
                 </div>
             </div>
-            <div>
-                <img class="main-image" src="{{ url_for('static', filename='images/main_photo.png') }}">
-            </div>
         </div>
         <div class="about-container">
-            <img class="bx-title" src="{{ url_for('static', filename='images/Frame10.png') }}">
+            <img class="bx-title" src="{{ url_for('static', filename='images/bx_main.png') }}">
             <div class="main-text">
-                Компанія BRAXTON™ — це український бренд заснований у 1992 році який зміг зарекомендувати себе як виробник високоякісного товару, що відрізняється оригінальним дизайном. Пропонує натуральне шкіряне взуття, яке виготовляється з високоякісних матеріалів. Гарний дизайн чоловічого взуття та просунуті рішення мають високі оцінки якості чоловічого взуття.
+                Компанія BRAXTON™ — це український бренд заснований у 1992 році який зміг зарекомендувати себе як виробник високоякісного товару, що відрізняється оригінальним дизайном. Пропонує натуральне шкіряне взуття, яке виготовляється з високоякісних матеріалів.
             </div>
         </div>
     </div>
     <p class="main-title">Що ви отримуєте працюючи з нами</p>
     <div class="main-container">
         <div>
-            <img class="main-photo" src="{{ url_for('static', filename='images/black-main.png') }}">
+            <img class="main-photo" src="{{ url_for('static', filename='images/composition.png') }}">
         </div>
         <div class="p-container">
             <div class="div-about">
@@ -71,5 +68,105 @@
             </div>
         </div>
     </div>
+
+    <div class="product-container">
+        <div class="title-product">Приклади товарів</div>
+        <div class="example-product">
+            <img class="product-img" src="{{ url_for('static', filename='images/product1.png') }}">
+            <div class="div-desc">
+                <div class="name-product">
+                    Зимові шкіряні черевики
+                </div>
+                <div class="desc-product">
+                    <p class="p-desc">
+                        Дана модель виготовляється з гладкої шкіри та поліуретанової підошви.
+                    </p>
+                    <p class="p-desc">
+                        Гладка шкіра - загальне позначення для різних видів шкір з щільною і гладкою лицьовою поверхнею, яка досягається шляхом спеціальної обробки верхнього шару шкури тварини.
+                    </p>
+                    <p class="p-desc">
+                        Поліуретанова підошва - матеріал не високої щільності, завдяки чому поглинає удари та має малу вагу, стійкий до стирання, містить чудові теплоізоляційні та водонепроникні властивості.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="example-product">
+            <div class="div-desc">
+                <div class="name-product">
+                    Зимові замшеві черевики
+                </div>
+                <div class="desc-product">
+                    <p class="p-desc">
+                        Дана модель виготовляється з гідрофобного велюру та термогумової підошви
+                    </p>
+                    <p class="p-desc">
+                        Велюр - це шкіра хромового дублення, відшліфована дрібнозернистими матеріалами із внутрішньої поверхні шкури, а нубук з лицьового боку.
+                    </p>
+                    <p class="p-desc">
+                        Термогумова підошва - морозостійка та неслизька підошва. Має відмінні характеристики: стійкадо стирання, міцна і щільна. Відмінний варіант для демісезонного та для зимового взуття.
+                    </p>
+                </div>
+            </div>
+            <img class="product-img" src="{{ url_for('static', filename='images/product2.png') }}">
+        </div>
+    </div>
+
+    <div class="footer-cooperate">
+        <img class="cooperate-shoes" src="{{ url_for('static', filename='images/shoes.png') }}">
+        <div class="container-cooperate-footer">
+            <div class="cooperate-title">
+                Все ще думаєш почати займатися дропшипінгом?
+            </div>
+            <div class="cooperete-main">
+                Отримай <span class="span-bonus">300 гривень</span> на свій особистий рахунок та почни заробляти разом з нами.
+            </div>
+            <div class="div-cooperate-footer">
+                    <button class="cooperate-btn">Співпрацювати</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-title">FAQ</div>
+        <div class="questions-container">
+            <div class="div-questions">
+                <div class="div-quiz">
+                    <div class="div-question">
+                        <div class="question">Чи є гарантія на товар?</div>
+                        <img class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
+                    </div>
+                    <div class="div-answer">
+                        <div class="answer">
+                            Зазвичай ми не допускаємо брак, але в разі чого без проблем поміняємо товар, або зробимо повернення грошей
+                        </div>
+                    </div>
+                </div>
+                <div class="div-quiz">
+                    <div class="div-question">
+                        <div class="question">Як відбувається відправлення товару?</div>
+                        <img class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
+                    </div>
+                    <div class="div-answer">
+                        <div class="answer">
+                            Весь товар відправляється безпосередньо з нашого складу у м. Харків, де кожен товар ретельно перевіряється та упаковується
+                        </div>
+                    </div>
+                </div>
+                <div class="div-quiz">
+                    <div class="div-question">
+                        <div class="question">У чому вигода опту?</div>
+                        <img class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
+                    </div>
+                    <div class="div-answer">
+                        <div class="answer">
+                            Оптова ціна значно нижча, ніж дроп, тому прибуток з одного продажу у вас буде помітно вищий
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
 
 {% endblock %}

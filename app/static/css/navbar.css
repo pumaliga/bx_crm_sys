@@ -1,38 +1,14 @@
 .navbar-container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 20px 90px;
-    height: 80px;
+}
+
+.div-logo{
+    margin-right: 190px;
 }
 
 .logo-image{
-    width: 140px;
     height: 80px;
-}
-
-.div-cooperate{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 26px;
-    width: 170px;
-    height: 20px;
-    background: #7E49D5;
-    border-radius: 8px;
-}
-
-.cooperate-btn{
-    height: 20px;
-    width: 120px;
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    outline: none;
-    background: transparent;
-    border: 0;
 }
 
 .div-links{

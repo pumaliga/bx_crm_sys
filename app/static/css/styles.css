@@ -7,8 +7,8 @@ body{
     flex-direction: column;
     background-image: url('../images/main_circles.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+    background-size: 1000px;
+    background-position: right top;
 }
 
 .title-container{
@@ -20,6 +20,7 @@ body{
 }
 
 .wel-title{
+    width: 60%;
     font-family: 'Roboto';
     font-size: 64px;
     font-style: normal;
@@ -35,6 +36,30 @@ body{
     line-height: 33px;
 }
 
+.div-cooperate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 26px;
+    width: 170px;
+    height: 20px;
+    background: #D0570C;
+    border-radius: 8px;
+}
+
+.cooperate-btn{
+    height: 20px;
+    width: 120px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    outline: none;
+    background: transparent;
+    border: 0;
+}
+
 .bx-title{
     width: 80%;
 }
@@ -45,9 +70,11 @@ body{
 }
 
 .about-container{
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 350px;
 }
 
 .main-text{
@@ -57,6 +84,7 @@ body{
 }
 
 .main-title{
+    margin-top: 100px;
     font-weight: 600;
     font-size: 44px;
     line-height: 53px;
@@ -70,7 +98,6 @@ body{
 .main-container{
     display: flex;
     align-items: center;
-
 }
 
 .p-container{
@@ -87,7 +114,7 @@ body{
 
 .div-inside{
     padding-left: 10px;
-    border-left: 3px solid #7E49D4;
+    border-left: 3px solid #D06725;
 }
 
 .p-title{
@@ -106,4 +133,141 @@ body{
     line-height: 24px;
     color: #6C6C6C;
 
+}
+
+.product-container{
+    margin-top: 110px;
+    background-color: #FFF2EB;
+
+}
+
+.title-product{
+    padding: 30px 0;
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.example-product{
+    display: flex;
+    margin: 0 90px;
+}
+
+.div-desc{
+    padding: 30px 50px;
+}
+
+.product-img{
+    padding-bottom: 30px;
+    width: 480px;
+    height: 490px;
+}
+
+.name-product{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.p-desc{
+    width: 90%;
+    color: #554B44;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer-cooperate{
+    display: flex;
+    height: 300px;
+    background-color: #E48952;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.container-cooperate-footer{
+    margin: 0 50px;
+}
+
+.cooperate-shoes{
+    width: 350px;
+    height: 480px;
+    margin-left: 90px;
+}
+
+.cooperate-title{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cooperete-main{
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.span-bonus{
+    font-size: 24px;
+    color: #521F00;
+}
+
+.div-cooperate-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 26px;
+    width: 170px;
+    height: 20px;
+    background: #521F00;
+    border-radius: 8px;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-title{
+    margin-top: 150px;
+    color: #2B2B2B;
+    font-family: Inter;
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.questions-container{
+    margin-top: 50px;
+    width: 980px;
+    border-top: 1px solid #D06725;
+}
+
+.div-quiz{
+    border-bottom: 1px solid #D06725;
+}
+
+.div-question{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 10px;
+}
+
+.qu-an-img{
+    width: 22px;
+    height: 22px;
+}
+
+.div-answer{
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 10px;
 }
