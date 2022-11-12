@@ -21,25 +21,24 @@ body{
 
 .wel-title{
     width: 60%;
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
     line-height: 60px;
 }
 
 .wel-body{
-    font-family: 'Roboto';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
-    line-height: 33px;
 }
 
 .div-cooperate{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     padding: 10px 26px;
     width: 170px;
     height: 20px;
@@ -49,11 +48,11 @@ body{
 
 .cooperate-btn{
     height: 20px;
+    cursor: pointer;
     width: 120px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
     color: #FFFFFF;
     outline: none;
     background: transparent;
@@ -78,12 +77,14 @@ body{
 }
 
 .main-text{
+    font-family: Inter, sans-serif;
     width: 70%;
     font-size: 20px;
     line-height: 24px;
 }
 
 .main-title{
+    font-family: Inter, sans-serif;
     margin-top: 100px;
     font-weight: 600;
     font-size: 44px;
@@ -103,7 +104,6 @@ body{
 .p-container{
     display: flex;
     flex-direction: column;
-
 }
 
 .div-about{
@@ -118,21 +118,16 @@ body{
 }
 
 .p-title{
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 28px;
-    line-height: 32px;
 }
 
 .p-body{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 24px;
     color: #6C6C6C;
-
 }
 
 .product-container{
@@ -142,6 +137,7 @@ body{
 }
 
 .title-product{
+    font-family: 'Inter', sans-serif;
     padding: 30px 0;
     font-size: 44px;
     font-weight: 600;
@@ -164,6 +160,7 @@ body{
 }
 
 .name-product{
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 600;
     line-height: 32px;
@@ -172,6 +169,7 @@ body{
 .p-desc{
     width: 90%;
     color: #554B44;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -186,12 +184,13 @@ body{
 }
 
 .container-cooperate-footer{
+    font-family: 'Roboto', sans-serif;
     margin: 0 50px;
 }
 
 .cooperate-shoes{
     width: 350px;
-    height: 480px;
+    height: 430px;
     margin-left: 90px;
 }
 
@@ -202,14 +201,15 @@ body{
 }
 
 .cooperete-main{
+    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 70px;
     font-size: 20px;
-    font-weight: 700;
     color: #FFFFFF;
 }
 
 .span-bonus{
+    font-weight: 700;
     font-size: 24px;
     color: #521F00;
 }
@@ -218,6 +218,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     padding: 10px 26px;
     width: 170px;
     height: 20px;
@@ -234,7 +235,7 @@ body{
 .faq-title{
     margin-top: 150px;
     color: #2B2B2B;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 44px;
     font-weight: 600;
     text-align: center;
@@ -251,10 +252,10 @@ body{
 }
 
 .div-question{
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    font-weight: 500;
     line-height: 24px;
     padding: 10px 10px;
 }
@@ -262,6 +263,7 @@ body{
 .qu-an-img{
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
 
 .div-answer{
@@ -270,4 +272,5 @@ body{
     font-weight: 400;
     line-height: 24px;
     padding: 10px 10px;
+    font-family: 'Inter', sans-serif;
 }

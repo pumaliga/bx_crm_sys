@@ -72,7 +72,7 @@
     <div class="product-container">
         <div class="title-product">Приклади товарів</div>
         <div class="example-product">
-            <img class="product-img" src="{{ url_for('static', filename='images/product1.png') }}">
+            <img id="product1" class="product-img" src="{{ url_for('static', filename='images/product1.png') }}">
             <div class="div-desc">
                 <div class="name-product">
                     Зимові шкіряні черевики
@@ -107,7 +107,7 @@
                     </p>
                 </div>
             </div>
-            <img class="product-img" src="{{ url_for('static', filename='images/product2.png') }}">
+            <img id="product2" class="product-img" src="{{ url_for('static', filename='images/product2.png') }}">
         </div>
     </div>
 
@@ -133,9 +133,9 @@
                 <div class="div-quiz">
                     <div class="div-question">
                         <div class="question">Чи є гарантія на товар?</div>
-                        <img class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
+                        <img id="quiz-1" class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
                     </div>
-                    <div class="div-answer">
+                    <div id="answer-1" class="div-answer">
                         <div class="answer">
                             Зазвичай ми не допускаємо брак, але в разі чого без проблем поміняємо товар, або зробимо повернення грошей
                         </div>
@@ -144,9 +144,9 @@
                 <div class="div-quiz">
                     <div class="div-question">
                         <div class="question">Як відбувається відправлення товару?</div>
-                        <img class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
+                        <img id="quiz-2" class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
                     </div>
-                    <div class="div-answer">
+                    <div id="answer-2" class="div-answer">
                         <div class="answer">
                             Весь товар відправляється безпосередньо з нашого складу у м. Харків, де кожен товар ретельно перевіряється та упаковується
                         </div>
@@ -155,9 +155,9 @@
                 <div class="div-quiz">
                     <div class="div-question">
                         <div class="question">У чому вигода опту?</div>
-                        <img class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
+                        <img id="quiz-3" class="qu-an-img" src="{{ url_for('static', filename='images/plus.png') }}">
                     </div>
-                    <div class="div-answer">
+                    <div id="answer-3" class="div-answer">
                         <div class="answer">
                             Оптова ціна значно нижча, ніж дроп, тому прибуток з одного продажу у вас буде помітно вищий
                         </div>
