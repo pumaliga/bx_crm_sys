@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div>
+            {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form class="login-form" method="POST">
+        <div class="div-form">
+            <img class="login-logo" src="{{ url_for('static', filename='images/NEW_logo.svg') }}">
+            <div class="title-login-form">Регистрация</div>
+            <div class="div-input">
+                <div class="input-title">Логин</div>
+                <input name="email" id="input-box" placeholder="Введите e-mail">
+            </div>
+            <div class="div-input">
+                <div class="input-title">Номер телефона</div>
+                <div class="helllo">
+                    <input name="number" id="input-box" placeholder="+380">
+                </div>
+            </div>
+            <div class="div-input">
+                <div class="input-title">Пароль</div>
+                <div class="helllo">
+                    <input name="password" id="input-box" placeholder="Введите пароль" type="password">
+                </div>
+            </div>
+            <button class="login-btn" type="submit">Зарегистрироваться</button>
+            <a class="login-link" href="{{ url_for('auth.login') }}">Уже есть аккаунт?</a>
+        </div>
+        <div class="div-img">
+            <img class="box" src="{{ url_for('static', filename='images/close_box.png') }}">
+        </div>
+    </form>
+{% endblock %}

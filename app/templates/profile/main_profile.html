@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
+    Hello {{ email }}, this private page
+{% endblock %}

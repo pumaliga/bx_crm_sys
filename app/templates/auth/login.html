@@ -2,13 +2,33 @@
 
 {% block content %}
 
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div>
+            {{ messages[0] }}
+        </div>
+    {% endif %}
+    {% endwith %}
     <form class="login-form" method="POST">
-        <div>
-            <input name="username">
+        <div class="div-form">
+            <img class="login-logo" src="{{ url_for('static', filename='images/NEW_logo.svg') }}">
+            <div class="title-login-form">Вход</div>
+            <div class="div-input">
+                <div class="input-title">Логин</div>
+                <input name="email" id="input-box" placeholder="Введите e-mail">
+            </div>
+            <div class="div-input">
+                <div class="input-title">Пароль</div>
+                <div class="helllo">
+                    <input name="password" id="input-box" placeholder="Введите пароль" type="password">
+                </div>
+            </div>
+            <button class="login-btn" type="submit">Войти</button>
+            <a class="login-link" href="{{ url_for('auth.signup') }}">Нет аккаунта? Зарегистрироваться</a>
         </div>
-        <div>
-            <input name="password">
+        <div class="div-img">
+            <img class="box" src="{{ url_for('static', filename='images/open_box.png') }}"
+                 style="height: 350px">
         </div>
-        <button type="submit">Login</button>
     </form>
 {% endblock %}
