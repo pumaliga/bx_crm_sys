@@ -34,4 +34,7 @@ def create_app():
     from .profile import profile as main_blueprint
     app.register_blueprint(main_blueprint, url_prefix='/profile')
 
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint, url_prefix='/main')
+
     return app

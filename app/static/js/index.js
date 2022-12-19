@@ -1,37 +1,22 @@
-const productFirst = document.getElementById("product1")
-const productSecond = document.getElementById("product2")
+//functions for landing page
+
 const faqQuizFirst = document.getElementById("quiz-1")
 const faqQuizSecond = document.getElementById("quiz-2")
 const faqQuizThird = document.getElementById("quiz-3")
+const headBtn = document.getElementById("head-btn")
+const mainBtn = document.getElementById("main-btn")
 
-
-productFirst.addEventListener("mouseover", respondMouseOver)
-productSecond.addEventListener("mouseover", respondMouseOver)
-
-productFirst.addEventListener("mouseout", respondMouseOut)
-productSecond.addEventListener("mouseout", respondMouseOut)
 
 faqQuizFirst.addEventListener("click", faqClick)
 faqQuizSecond.addEventListener("click", faqClick)
 faqQuizThird.addEventListener("click", faqClick)
 
+headBtn.addEventListener("click", redirectMain)
+mainBtn.addEventListener("click", redirectMain)
 
-function respondMouseOver(e) {
-    let product = e.target
-    if (product.id === "product1") {
-        product.src = 'http://127.0.0.1:5000/static/images/shoes2.png'
-    } else {
-        product.src = 'http://127.0.0.1:5000/static/images/shoes4.png'
-    }
-}
 
-function respondMouseOut(e){
-    let product = e.target
-    if(product.id === "product1"){
-        product.src = 'http://127.0.0.1:5000/static/images/product1.png'
-    } else {
-        product.src = 'http://127.0.0.1:5000/static/images/product2.png'
-    }
+function redirectMain() {
+    window.location = "http://127.0.0.1:5000/main"
 }
 
 function faqClick(e){
@@ -46,8 +31,4 @@ function faqClick(e){
         div_answer.style.display = 'block';
     }
 }
-
-
-
-
 

@@ -24,3 +24,9 @@
     color: #2B2B2B;
     text-decoration: none;
 }
+
+.footer-container{
+    width: 100%;
+    margin-top: 130px;
+    align-items: center;
+}

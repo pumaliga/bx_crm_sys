@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="second-main-container">
+        <div class="sidebar-container">
+            <img class="logo-image" src="{{ url_for('static', filename='images/NEW_LOGO.svg') }}"
+            style="margin-top: 50px; margin-bottom: 30px">
+            <div id="home" class="main-btn-container">
+                <img class="main-logo-img" src="{{ url_for('static', filename='images/home.png') }}">
+                <span class="main-btn-text">Головна</span>
+            </div>
+            <div id="orders" class="main-btn-container">
+                <img class="main-logo-img" src="{{ url_for('static', filename='images/orders.png') }}">
+                <span class="main-btn-text">Замовлення</span>
+            </div>
+            <div id="card" class="main-btn-container">
+                <img class="main-logo-img" src="{{ url_for('static', filename='images/card.png') }}"
+                     style="">
+                <span class="main-btn-text">Виплати</span>
+            </div>
+            <div id="bag" class="main-btn-container">
+                <img class="main-logo-img" src="{{ url_for('static', filename='images/bag.png') }} ">
+                <span class="main-btn-text">Кошик</span>
+            </div>
+        </div>
+        <div class="product-list-container">
+
+        </div>
+    </div>
+{% endblock %}
